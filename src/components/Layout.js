@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const Layout = styled.div`
 display: flex;
-padding: 40px 0;
+/* flex-direction: column;
+align-items: center; */
+padding: ${p => p.theme.spacing(5)} 0;
 flex-wrap: wrap;
-gap: 40px;
+gap: ${p => p.theme.spacing(5)};
 justify-content: center;
 color: ${p => p.theme.colors.text};
 `;

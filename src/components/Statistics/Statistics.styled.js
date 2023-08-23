@@ -5,7 +5,7 @@ min-width: 300px;
 `;
 
 export const TitleText = styled.h2`
-padding: 16px 0;
+padding: ${p => p.theme.spacing(2)} 0;
 text-align: center;
 color: ${p => p.theme.colors.textTitle};
 border: 2px solid ${p => p.theme.colors.background};
@@ -27,7 +27,7 @@ export const ItemStat = styled.li`
 display: flex;
 width: 100%;
 flex-direction: column;
-padding: 8px;
+padding: ${p => p.theme.spacing(1)};
 background-color: ${p => p.theme.colors.backgroundOpacity};
 border-left: 2px solid ${p => p.theme.colors.background};
 `;

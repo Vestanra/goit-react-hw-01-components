@@ -16,7 +16,7 @@ background-color: ${p => p.theme.colors.background};
 export const HeadText = styled.th`
 color: ${p => p.theme.colors.textTitle};
 border: 2px solid ${p => p.theme.colors.table};
-padding: 12px; 
+padding: ${p => p.theme.spacing(2)}; 
 `
 export const Body = styled.tbody`
 tr:nth-child(even) {
@@ -25,6 +25,6 @@ tr:nth-child(even) {
 `;
 
 export const BodyText = styled.td`
-padding: 8px; 
+padding: ${p => p.theme.spacing(1)}; 
 border: 2px solid ${p => p.theme.colors.table};
 `;

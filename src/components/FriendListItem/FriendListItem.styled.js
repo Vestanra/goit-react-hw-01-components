@@ -4,16 +4,16 @@ export const Item = styled.li`
 display: flex;
 justify-content: start;
 align-items: center;
-gap: 24px;
-padding: 16px;
+gap: ${p => p.theme.spacing(3)};
+padding: ${p => p.theme.spacing(2)};
 border: 2px solid ${p => p.theme.colors.background};
 box-shadow: ${props => props.theme.shadow};
 `;
 
 export const Status = styled.span`
 display: block;
-width: 20px;
-height: 20px;
+width: ${p => p.theme.spacing(2)};
+height: ${p => p.theme.spacing(2)};
 border-radius: 50%;
 background-color: ${({is_online}) => {
     return is_online ? "#23b34f" : "#e64730"

@@ -12,6 +12,7 @@ const theme = {
     table: '#94a6a6',
   },
   shadow: '1px 1px 8px 4px rgba(200, 236, 236, 0.4)',
+  spacing: value => `${value * 8}px`,
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(

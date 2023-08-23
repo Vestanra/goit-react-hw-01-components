@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const List = styled.ul`
 display: flex;
 flex-direction: column;
-gap: 16px;
+gap: ${p => p.theme.spacing(2)};
 min-width: 300px;
 font-size: 20px;
 line-height: 1.5;

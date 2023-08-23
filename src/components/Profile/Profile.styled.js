@@ -12,7 +12,7 @@ export const ProfileWrap = styled.div`
 export const Description = styled.div`
     border: 2px solid ${p => p.theme.colors.background};
     box-shadow: ${props => props.theme.shadow};
-    padding: 16px;
+    padding: ${p => p.theme.spacing(2)};
 `;
 
 export const Avatar = styled.img`
@@ -24,13 +24,13 @@ export const Name = styled.p`
     color: ${p => p.theme.colors.textTitle};
     font-weight: 700;
     font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 12px;
+    margin-top: ${p => p.theme.spacing(2)};
+    margin-bottom: ${p => p.theme.spacing(1)};
 `;
 
 export const Location = styled.p`
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: ${p => p.theme.spacing(1)};
+    margin-bottom: ${p => p.theme.spacing(1)};
 `;
 export const List = styled.ul`
     display:flex;
@@ -45,7 +45,7 @@ export const ListItem = styled.li`
     width: 100%;
     border: 2px solid ${p => p.theme.colors.background};
     border-top: none;
-    padding: 8px;
+    padding: ${p => p.theme.spacing(1)};
     flex-direction: column;
 `;
 
