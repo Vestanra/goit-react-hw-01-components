@@ -12,6 +12,7 @@ export const ProfileWrap = styled.div`
 export const Description = styled.div`
     border: 2px solid ${p => p.theme.colors.background};
     box-shadow: ${props => props.theme.shadow};
+    padding: 16px;
 `;
 
 export const Avatar = styled.img`
