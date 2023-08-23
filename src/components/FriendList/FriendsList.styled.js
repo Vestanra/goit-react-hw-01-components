@@ -1,19 +1,13 @@
 import styled from 'styled-components';
 
 export const List = styled.ul`
-`;
-
-export const Item = styled.li`
-`;
-
-export const Status = styled.span`
-color: ${props => {
-  console.log(props)
-}}
-`;
-
-export const Avatar = styled.img`
-`;
-
-export const Name = styled.p`
+display: flex;
+flex-direction: column;
+gap: 16px;
+min-width: 300px;
+font-size: 20px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: ${p => p.theme.colors.textTitle};
+font-weight: 500;
 `;
